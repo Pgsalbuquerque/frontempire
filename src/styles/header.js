@@ -38,3 +38,7 @@ export const BodyDashboard = styled.div`
     display: flex;
     flex-direction: row;
 `;
+
+export const DivFlex = styled.div`
+    position: fixed;
+`;

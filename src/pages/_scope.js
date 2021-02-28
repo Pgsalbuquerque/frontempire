@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {Header, Image, Text1, BodyDashboard} from '../styles/header'
+import {DivFlex,Header, Image, Text1, BodyDashboard} from '../styles/header'
 import * as FA from 'react-icons/fa';
 
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarContent, SidebarHeader, SidebarFooter } from 'react-pro-sidebar';
@@ -10,12 +10,14 @@ export default function Home(props) {
     <div >
       <main>
       <BodyDashboard>
-        <ProSidebar collapsed={true}>
+        <DivFlex>
+        <ProSidebar collapsed={true} >
           <SidebarHeader>
             <Header>
               <Image src="/linux.svg"/>
             </Header>
           </SidebarHeader>
+          
           <SidebarContent>
           
             <Menu>
@@ -233,10 +235,7 @@ export default function Home(props) {
             </Menu>
           </SidebarContent>
         </ProSidebar>
-        <Header>
-        <Text1>{props.name}</Text1>
-          
-        </Header>
+        </DivFlex>
       </BodyDashboard>
         
       </main>
